@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document String Methods in JavaScript</title>
+    <script>
+        console.log("String Methods in JavaScript")
+//. length
+        let text = "JavaScript";
+        console.log(text.length); // 10
+//. toUpperCase()
+        let name = "Ali";
+            console.log(name.toUpperCase()); // "ALI"
+            console.log(name.toLowerCase()); // "ali"
+//3. trim()
+        let input = "   Hello World   ";
+        
+        console.log(input.trim()); // "Hello World"
+//4. includes()
+        let msg = "Learn JavaScript";
+        console.log(msg.includes("Java")); // true
+        console.log(msg.includes("Python")); // false
+//indexOf() and lastIndexOf()
+        let str = "banana";
+        console.log(str.indexOf("a")); // 1
+        console.log(str.lastIndexOf("a")); // 5
+//startsWith() and endsWith()
+        let title = "Frontend Developer";
+        console.log(title.startsWith("Front")); // true
+        console.log(title.endsWith("Developer")); // true
+//7. slice(start, end)
+       let word = "JavaScript";
+        console.log(word.slice(0, 4)); // "Java"
+        console.log(word.slice(4));    // "Script" 
+// 8. substring(start, end)
+        let str2 = "Hello, World!";
+        console.log(str2.substring(0, 5)); // "Hello"
+        console.log(str2.substring(7));    // "World!"
+// 9. replace(old, new)
+        let msga = "I love Python";
+        console.log(msga.replace("Python", "JavaScript")); // "I love JavaScript"
+    //all replace
+        let msgi = "apple apple apple";
+        console.log(msgi.replace(/apple/g, "banana")); // "banana banana banana"
+//10. split(separator)
+        let data = "HTML,CSS,JavaScript";
+        let parts = data.split(",");
+        console.log(parts); // ["HTML", "CSS", "JavaScript"]
+//11. charAt(index)
+       let lang = "JavaScript";
+            console.log(lang.charAt(0)); // "J" 
+//repeat(count)
+        let wow = "ha";
+        console.log(wow.repeat(3)); // "hahaha"
+        // mdn docs and explore more methods in website
+    </script>
+</head>
+<body>
+    String Methods in JavaScript
+</body>
+</html>
