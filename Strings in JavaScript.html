@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocumentStrings in JavaScript </title>
+    <script>
+        console.log("Strings in JavaScript")
+        let single = 'Hello';
+        let double = "World";
+        let template = `Hello World`;
+            console.log(single);
+            console.log(double);
+            console.log(template.length);
+    //Declaring Strings
+        let message = "Welcome to JavaScript!";
+        let name = 'Salman';
+        console.log(message);
+        console.log(name);  
+    //String Length
+        let str = "Hello, World!";
+        console.log(str.length); // Output: 13
+    //Multiline Strings Using \n (newline character):
+        let text = "Line 1\nLine 2\nLine 3";
+            console.log(text);
+    //Using template literals (backticks):
+        let templateLiteral = `Line 1
+            Line 2
+            Line 3`;
+            console.log(templateLiteral);
+    //String Indexing
+             let word = "JavaScript";
+                console.log(word[0]); // "J"
+                console.log(word[4]); // "S"
+    //Strings are Immutable
+    let greeting = "Hello";
+        greeting[0] = "Y"; // This will not work
+        console.log(greeting); // Still "Hello"
+    //Concatenation (Combining Strings
+        let firstName = "Salman";
+        let lastName = "Khan";
+        let fullName = firstName + " " + lastName;
+            console.log(fullName); // "Salman Khan"
+    </script>
+</head>
+<body>
+    Strings in JavaScript
+    
+</body>
+</html>
