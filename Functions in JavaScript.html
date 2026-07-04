@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Functions in JavaScript</title>
+    <script>
+        function add(a, b) {
+        let sum = a + b;
+        let multiply = a * b;
+        let divide = a / b;
+        let average = (a + b) / 2;
+        return { sum, multiply, divide, average };
+        }
+        console.log("Functions in JavaScript");
+        let a = 10;
+        let b = 20; 
+        console.log(add(a, b));
+        console.log(add(5, 10));
+    // Function Declaration
+        function greet() {
+        console.log("Hello, JavaScript!");
+        }
+
+        greet(); // Call the function
+
+    //Function with Parameters
+       function add(a, b) {
+  return a + b;
+}
+
+let result = add(5, 3); // 8
+console.log(result);
+// Function Expression
+const sayHi = function() {
+  console.log("Hi there!");
+};
+
+sayHi();
+// Arrow Function
+const square = (num) => {
+  return num * num;
+};
+
+console.log(square(4)); // 16
+//One-liner version (if only returning a value):
+const multiply = (a, b) => a * b;
+console.log(multiply(2, 3)); // 6
+//Scope (Simple Explanation)
+    function showAge() {
+  let age = 25;
+  console.log(age);
+}
+
+showAge();
+// console.log(age); // Error: age is not defined
+    </script>
+</head>
+<body>
+    Functions in JavaScript
+</body>
+</html>
