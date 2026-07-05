@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DOM Introduction</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; }
+    code { background: #f4f4f4; padding: 0.2rem 0.4rem; }
+  </style>
+</head>
+<body>
+  <h1>Document Object Model (DOM)</h1>
+  <p>The DOM represents the structure of an HTML document as a tree of objects.</p>
+  <div id="message">Hello from the DOM!</div>
+
+  <script>
+    const message = document.getElementById('message');
+    message.textContent = 'The DOM was updated successfully.';
+  </script>
+</body>
+</html>
