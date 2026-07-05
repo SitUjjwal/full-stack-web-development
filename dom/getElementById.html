@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document getElementById</title>
+    <script>
+        console.log('getElementById');
+        const elementById = document.getElementById('myElement');
+        console.log(elementById); // Logs the element with the specified ID
+    </script>
+</head>
+<body>
+    <div id="myElement">This is the element with ID 'myElement'</div>
+    <div class="container">
+        <div id="box" class="box">This is a box</div>
+        <div class="box">This is another box 2</div>
+        <div class="box">This is a box 3</div>
+        <button onclick="magic()">Click Me</button>
+        <script>
+            function magic() {
+                let b1 = document.getElementById('box');
+                b1.innerHTML = "magic";
+            }
+        </script>
+    </div>
+</body>
+</html>
