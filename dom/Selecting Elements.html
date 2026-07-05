@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Selecting Elements</title>
+    <script>
+        console.log('Selecting Elements');
+     //getElementById
+        const elementById = document.getElementById('myElement');
+        console.log(elementById); // Logs the element with the specified ID  
+    //getElementsByClassName
+        const elementsByClassName = document.getElementsByClassName('myClass');
+        console.log(elementsByClassName); // Logs a live HTMLCollection of elements with the specified class name
+    //getElementsByTagName
+        const elementsByTagName = document.getElementsByTagName('p'); 
+        console.log(elementsByTagName); // Logs a live HTMLCollection of elements with the specified tag name
+    //querySelector
+        const firstElement = document.querySelector('.myClass');
+        console.log(firstElement); // Logs the first element with the specified class name      
+    //querySelectorAll
+        const allElements = document.querySelectorAll('.myClass');
+        console.log(allElements); // Logs a static NodeList of all elements with the specified class name   
+    
+    </script>
+</head>
+<body>
+    Selecting Elements
+</body>
+</html>
