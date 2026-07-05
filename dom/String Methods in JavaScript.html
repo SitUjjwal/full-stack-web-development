@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocumentString Methods in JavaScript</title>
+    <script>
+        console.log('String Methods in JavaScript');
+    // 1. length
+        let text = "JavaScript";
+            console.log(text.length); // 10
+    // 2. toUpperCase()
+        let name = "Ali";
+            console.log(name.toUpperCase()); // "ALI"
+            console.log(name.toLowerCase()); // "ali"
+    //3. trim()
+        let sentence = "   Hello, World!   ";
+            console.log(sentence.trim()); // "Hello, World!"
+    //4. includes()
+        let msg = "Learn JavaScript";
+        console.log(msg.includes("Java")); // true
+        console.log(msg.includes("Python")); // false
+    //5. indexOf() and lastIndexOf()
+        let str = "banana";
+        console.log(str.indexOf("a")); // 1
+        console.log(str.lastIndexOf("a")); // 5
+    //6. startsWith() and endsWith()
+            let title = "Frontend Developer";
+            console.log(title.startsWith("Front")); // true
+            console.log(title.endsWith("Dev")); // false
+    // 7. slice(start, end)
+        let fruit = "Watermelon";
+        console.log(fruit.slice(0, 5)); // "Water"
+        console.log(fruit.slice(5)); // "melon"
+    // 8. replace()
+        let greeting = "Hello, World!";
+        console.log(greeting.replace("World", "JavaScript")); // "Hello, JavaScript!"
+    //10. split(separator)
+        let sentence2 = "I love JavaScript";
+        console.log(sentence2.split(" ")); // ["I", "love", "JavaScript"]
+    // 11. charAt(index)
+        let str2 = "Hello";
+        console.log(str2.charAt(1)); // "e"
+    //12. repeat(count)
+        let str3 = "Ha";
+        console.log(str3.repeat(3)); // "HaHaHa"    
+    </script>
+</head>
+<body>
+    String Methods in JavaScript
+</body>
+</html>
