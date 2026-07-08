@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Types of Common Events</title>
+
+</head>
+<body>
+    <div class="container">
+        <div class="box">box 1</div>
+        <div class="box">box 2</div>
+        <div class="box">box 3</div>
+    </div>
+    <span id="first-span">i am spam</span>
+    Types of Common Events
+    <script>
+     //click event
+    const boxes = document.querySelectorAll('.box');
+    boxes.forEach(box => {
+        box.addEventListener('click', () => {
+            alert('Box clicked!');
+        });
+    });
+    //keydown event
+    const input = document.getElementById('input');
+    document.addEventListener('keydown', (event) => {
+        alert(`Key pressed: ${event.key}`);
+    });     
+       
+    //submit event
+    const form = document.querySelector('form');
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        alert('Form submitted!');
+    });
+    //mouseover and mouseout
+ const box = document.querySelector('.box');
+box.addEventListener('mouseover', () => {
+  box.style.backgroundColor = 'lightblue';
+});
+box.addEventListener('mouseout', () => {
+  box.style.backgroundColor = 'red';
+});
+//Attaching Event Listeners
+element.addEventListener('eventName', callbackFunction);
+document.querySelector('h1').addEventListener('click', () => {
+  console.log('Heading clicked!');
+});
+    </script>
+</body>
+</html>
